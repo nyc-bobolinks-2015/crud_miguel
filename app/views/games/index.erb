@@ -1,0 +1,9 @@
+<div>
+	<a href="/games/new"> Add Game! </a>
+</div><br><br>
+
+<div>
+	<% @games.each do |game| %> 
+	<a href='/games/<%= game.id %>'><%= game.name %></a><br>
+	<% end %>
+</div>
