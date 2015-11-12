@@ -1,0 +1,8 @@
+<form action="/games/<%=@game.id%>" method='post'>
+<input type="hidden" name="_method" value="put">
+Name: <input type="text" name="name" value="<%=@game.name%>"/>
+Max Players: <input type="text" name="player_count" value="<%=@game.player_count%>"/>
+Average Game Length: <input type="text" name="avg_length" value="<%=@game.avg_length%>"/>
+Description: <input type="text" name="description" value="<%=@game.description%>"/>
+<input type="submit" value="Finished Editting!"/>
+</form>

@@ -1,0 +1,7 @@
+<form action="/players/<%=@player.id%>" method='post'>
+<input type="hidden" name="_method" value="put">
+Name: <input type="text" name="name" value="<%=@player.name%>"/>
+Age: <input type="text" name="age" value="<%=@player.age%>"/>
+Sex: <input type="text" name="sex" value="<%=@player.sex%>"/>
+<input type="submit" value="Finished Editting!"/>
+</form>

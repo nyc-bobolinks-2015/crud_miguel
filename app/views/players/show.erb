@@ -1,0 +1,14 @@
+<div>
+	<a href="/players/<%= @player.id %>/edit"> Edit Player </a>
+</div>
+
+<form class="centered" action="/players/<%=@player.id%>" method='post'>
+	<input type="hidden" name="_method" value="delete">
+	<input type="submit" value="Delete Player"/>
+</form><br><br>
+
+<div>
+	<%= @player.name %><br>
+	<%= @player.age %><br>
+	<%= @player.sex %><br>
+</div>
