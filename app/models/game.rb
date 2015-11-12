@@ -1,3 +1,4 @@
 class Game < ActiveRecord::Base
-  # Remember to create a migration!
+  has_many :sessions
+  has_many :players, through: :sessions
 end

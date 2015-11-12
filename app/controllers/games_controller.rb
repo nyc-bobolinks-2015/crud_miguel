@@ -1,7 +1,3 @@
-get '/' do
-	redirect("/games/")
-end
-
 get '/games/new' do
 	erb :'games/new'
 end
